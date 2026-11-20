@@ -2028,14 +2028,6 @@ main {
         display: none;
     }
 
-    .leaves-layer {
-        opacity: .55;
-    }
-
-    .gold-leaf:nth-child(n+7) {
-        display: none;
-    }
-
     .section-watermark {
         letter-spacing: -6px;
     }
@@ -2170,9 +2162,6 @@ main {
         transform: none;
     }
 
-    .gold-leaf {
-        filter: none;
-    }
 }
 @media (prefers-reduced-motion:reduce) {
 
@@ -2180,7 +2169,7 @@ main {
         scroll-behavior: auto;
     }
 
-    .gold-leaf,.gold-leaf img,.ambient,.hero-art,.hero-art.reveal.visible,.hero-halo,.art-stamp,.small-star,.art-shine,.project-visual {
+    .ambient,.hero-art,.hero-art.reveal.visible,.hero-halo,.art-stamp,.small-star,.art-shine,.project-visual {
         animation: none !important;
     }
 

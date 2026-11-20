@@ -1,4 +1,4 @@
-// PORTAFOLIO EDICIÓN ÁUREA — interacciones suaves y accesibles
+// Interacciones del portafolio
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const coarsePointer = window.matchMedia('(pointer: coarse)').matches;
 const year = document.getElementById('year');
@@ -44,32 +44,7 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 updateScroll();
 
-// Hojas doradas, creadas una sola vez. CSS se encarga de la animación.
-if (!reduceMotion) {
-  const leafLayer = document.getElementById('leaves-layer');
-  const leafCount = coarsePointer ? 7 : 15;
-  // Valores deterministas: misma composición sin saltos en cada carga.
-  for (let i = 0; i < leafCount; i++) {
-    const leaf = document.createElement('div');
-    leaf.className = 'gold-leaf';
-    const x = (i * 37 + 7) % 100;
-    leaf.style.setProperty('--x', `${x}%`);
-    leaf.style.setProperty('--size', `${18 + (i * 13) % 32}px`);
-    leaf.style.setProperty('--opacity', `${0.17 + (i % 5) * 0.085}`);
-    leaf.style.setProperty('--duration', `${19 + (i * 7) % 17}s`);
-    leaf.style.setProperty('--delay', `${-((i * 11) % 34)}s`);
-    leaf.style.setProperty('--sway', `${-85 + (i * 43) % 175}px`);
-    leaf.style.setProperty('--spin', `${3 + (i % 5)}s`);
-    const img = document.createElement('img');
-    img.src = 'assets/img/hoja-dorada.svg';
-    img.alt = '';
-    img.decoding = 'async';
-    leaf.appendChild(img);
-    leafLayer?.appendChild(leaf);
-  }
-}
-
-// Luz ambiental y seguimiento solo en dispositivos con mouse
+// Luz y seguimiento solo en dispositivos con mouse
 if (!reduceMotion && !coarsePointer) {
   let mouseTicking = false, pointerX = 0, pointerY = 0;
   document.addEventListener('pointermove', event => {
@@ -90,7 +65,7 @@ if (!reduceMotion && !coarsePointer) {
       card.style.setProperty('--card-y', `${event.clientY - rect.top}px`);
     }, { passive: true });
   });
-  // Inclinación sutil solo para la escultura, sin dificultar lectura de tarjetas
+  // Inclinación solo para la escultura 
   const artFrame = document.querySelector('.art-frame[data-tilt]');
   artFrame?.addEventListener('pointermove', event => {
     const r = artFrame.getBoundingClientRect();
@@ -101,7 +76,7 @@ if (!reduceMotion && !coarsePointer) {
   artFrame?.addEventListener('pointerleave', () => { artFrame.style.transform = ''; });
 }
 
-// Cerrar menú móvil al navegar. Bootstrap ya está enlazado en HTML.
+// Cierre menú móvil al navegar 
 const menu = document.getElementById('menu');
 document.querySelectorAll('#menu .nav-link').forEach(link => {
   link.addEventListener('click', () => {
@@ -112,9 +87,7 @@ document.querySelectorAll('#menu .nav-link').forEach(link => {
 });
 
 
-/* ============================================
-   HABILIDADES BLANDAS — INTERACTIVIDAD
-============================================ */
+/*Animaciones de habilidades blandas*/
 
 const softSection = document.querySelector(".softskills-section");
 const softCards = document.querySelectorAll(".soft-card");
@@ -143,7 +116,7 @@ if (softSection && softCards.length > 0 && !reduceMotion) {
     }
 }
 
-// Brillo que sigue al cursor
+// Brillo que sigue al mouse
 if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
 
     softCards.forEach(card => {
@@ -167,9 +140,7 @@ if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
     });
 }
 
-/* ============================================
-   STACK TECNOLÓGICO — INTERACTIVIDAD
-============================================ */
+/*Animaciones de stack tecnologico*/
 
 const techSection = document.querySelector(".tech-section");
 const techCards = document.querySelectorAll(".tech-card");
@@ -201,7 +172,7 @@ if (techSection && techCards.length > 0 && !techReducedMotion) {
     }
 }
 
-// Iluminación que sigue al cursor
+// Iluminación que sigue al mouse
 if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
 
     techCards.forEach(card => {
@@ -228,9 +199,8 @@ if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
     });
 }
 
-/* ============================================
-   CONTACTO — EFECTO DE ILUMINACIÓN
-============================================ */
+/* Efecto de iluminación de contacto */
+
 
 const contactGlowPanel = document.querySelector(".contact-panel");
 
