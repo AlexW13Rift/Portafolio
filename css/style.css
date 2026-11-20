@@ -42,7 +42,9 @@ a:focus-visible,button:focus-visible {
     outline-offset: 5px;
 }
 
-/* ===== 02 · EFECTOS AMBIENTALES Y HOJAS ===== */
+
+/* Ambiente y hojas */
+
 
 .page-progress {
     position: fixed;
@@ -126,7 +128,9 @@ a:focus-visible,button:focus-visible {
     animation: leaf-tumble var(--spin) ease-in-out infinite alternate;
 }
 
-/* ===== 03 · NAVEGACIÓN ===== */
+
+/* Navegación */
+
 
 .navbar {
     background: rgba(7,11,17,.76);
@@ -238,7 +242,6 @@ main,footer,.navbar {
         #080d14;
 }
 
-/* Distribución principal */
 
 .contact-layout {
     display: grid;
@@ -247,7 +250,6 @@ main,footer,.navbar {
     gap: clamp(35px, 6vw, 100px);
 }
 
-/* Texto izquierdo */
 
 .contact-copy h2 {
     max-width: 650px;
@@ -294,9 +296,9 @@ main,footer,.navbar {
     animation: contactPulse 3s ease-in-out infinite;
 }
 
-/* ============================================
-   TARJETA DE CONTACTO
-============================================ */
+
+/* Contacto */
+
 
 .contact-panel {
     --contact-x: 50%;
@@ -323,7 +325,6 @@ main,footer,.navbar {
         box-shadow 0.4s ease;
 }
 
-/* Luz interactiva */
 
 .contact-panel::before {
     content: "";
@@ -354,7 +355,6 @@ main,footer,.navbar {
     opacity: 1;
 }
 
-/* Encabezado */
 
 .contact-panel-heading {
     display: flex;
@@ -412,9 +412,9 @@ button.contact-email:last-child {
     box-shadow: 0 0 20px rgba(215, 183, 123, 0.3);
 }
 
-/* ============================================
-   ENLACES DE CONTACTO
-============================================ */
+
+/* Contacto */
+
 
 .contact-item {
     position: relative;
@@ -442,7 +442,6 @@ button.contact-email:last-child {
     color: var(--ivory);
 }
 
-/* Contenedor de íconos */
 
 .contact-item-icon {
     display: grid;
@@ -509,8 +508,6 @@ button.contact-email:last-child {
 }
 
 
-/* Información */
-
 .contact-item-info {
     display: flex;
     flex-direction: column;
@@ -530,7 +527,6 @@ button.contact-email:last-child {
     color: var(--muted);
 }
 
-/* Flecha */
 
 .contact-arrow {
     flex-shrink: 0;
@@ -547,7 +543,9 @@ button.contact-email:last-child {
     color: #ffe0a0;
 }
 
-/* ===== 04 · INICIO, FOTOGRAFÍA Y BOTONES ===== */
+
+/* Inicio */
+
 
 .hero {
     padding-top: 30px;
@@ -852,7 +850,7 @@ button.contact-email:last-child {
     isolation: isolate;
 }
 
-/* Reflejo luminoso */
+
 .art-frame::before {
     content: "";
     position: absolute;
@@ -880,7 +878,9 @@ button.contact-email:last-child {
     animation: reflejoDorado 7s ease-in-out infinite;
 }
 
-/* ===== 05 · SECCIONES COMPARTIDAS ===== */
+
+/* Secciones generales */
+
 
 .section-pad {
     padding: 120px 0;
@@ -922,7 +922,9 @@ button.contact-email:last-child {
     white-space: nowrap;
 }
 
-/* ===== 06 · SOBRE MÍ ===== */
+
+/* Sobre mí */
+
 
 .about-text {
     font-size: clamp(20px, 2.2vw, 27px);
@@ -988,7 +990,9 @@ button.contact-email:last-child {
     display: none;
 }
 
-/* ===== 07 · HABILIDADES ===== */
+
+/* Habilidades anteriores */
+
 
 .stack-card {
     height: 100%;
@@ -1065,7 +1069,9 @@ button.contact-email:last-child {
     padding-bottom: 65px;
 }
 
-/* ===== 08 · PROYECTOS ===== */
+
+/* Proyectos */
+
 
 .project-card {
     height: 100%;
@@ -1193,13 +1199,13 @@ button.contact-email:last-child {
     padding: 30px;
 }
 
-/* Descripción */
+
 .project-content p {
     min-height: 85px;
     margin-bottom: 15px;
 }
 
-/* Tecnologías */
+
 .project-content .tags {
     display: flex;
     flex-wrap: wrap;
@@ -1211,15 +1217,15 @@ button.contact-email:last-child {
     margin-bottom: 10px;
 }
 
-/* Enlaces */
+
 .project-content a {
     margin-top: auto;
     align-self: flex-start;
 }
 
-/* =====================================
-   IMÁGENES DE PROYECTOS
-===================================== */
+
+/* Proyectos */
+
 
 .project-visual {
     position: relative;
@@ -1242,7 +1248,7 @@ button.contact-email:last-child {
     transition: transform 0.7s ease;
 }
 
-/* Oscurecimiento inferior */
+
 .project-visual::before {
     content: "";
     position: absolute;
@@ -1264,12 +1270,12 @@ button.contact-email:last-child {
     pointer-events: none;
 }
 
-/* Eliminar decoración </> */
+
 .project-visual::after {
     display: none;
 }
 
-/* Etiqueta */
+
 .project-visual small {
     position: absolute;
     bottom: 18px;
@@ -1282,11 +1288,13 @@ button.contact-email:last-child {
     letter-spacing: 2px;
 }
 
-/* Zoom al pasar el cursor */
+
 .project-card:hover .project-visual img {
     transform: scale(1.08);
 }
-/* ===== 09 · CONTACTO ===== */
+
+/* Contacto */
+
 
 .contact-section {
     background: radial-gradient(ellipse at 80% 15%,rgba(178,128,62,.18),transparent 46%),radial-gradient(ellipse at 0% 90%,rgba(43,79,76,.2),transparent 56%),#080d14;
@@ -1300,7 +1308,9 @@ button.contact-email:last-child {
     font-size: clamp(40px,5vw,77px);
 }
 
-/* ===== 10 · FOOTER ===== */
+
+/* Pie de página */
+
 
 footer {
     padding: 28px 0;
@@ -1319,7 +1329,9 @@ footer {
     opacity: .4;
 }
 
-/* ===== 11 · OTROS COMPONENTES ===== */
+
+/* Componentes generales */
+
 
 a {
     text-decoration: none;
@@ -1358,9 +1370,10 @@ main {
     transition-delay: .24s;
 }
 
-/* ===== 12 · MARCO DORADO Y ÓRBITAS ILUMINADAS ===== */
 
-/* La fotografía mantiene su inclinación/parallax si está controlado por JS. */
+/* Fotografía y efectos dorados */
+
+
 .art-frame {
     border: 2px solid rgba(231, 192, 119, .86);
     box-shadow:
@@ -1425,7 +1438,7 @@ main {
     gap: 22px;
 }
 
-/* Tarjetas principales */
+
 .tech-card {
     position: relative;
     padding: 30px;
@@ -1448,7 +1461,7 @@ main {
         box-shadow 0.4s ease;
 }
 
-/* Reflejo dorado interactivo */
+
 .tech-card::before {
     content: "";
     position: absolute;
@@ -1465,7 +1478,7 @@ main {
     transition: opacity 0.4s ease;
 }
 
-/* Línea inferior */
+
 .tech-card::after {
     content: "";
     position: absolute;
@@ -1485,7 +1498,7 @@ main {
     transition: transform 0.5s ease;
 }
 
-/* Encabezado */
+
 .tech-card-header {
     display: flex;
     justify-content: space-between;
@@ -1522,7 +1535,7 @@ main {
     color: var(--ivory);
 }
 
-/* Distribución de tecnologías */
+
 .tech-items {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1549,7 +1562,7 @@ main {
         transform 0.3s ease;
 }
 
-/* Íconos */
+
 .tech-item > i {
     font-size: 34px;
     line-height: 1;
@@ -1597,9 +1610,9 @@ main {
     }
 }
 
-/* ============================================
-   ANIMACIONES DE ENTRADA
-============================================ */
+
+/* Animaciones */
+
 
 .tech-ready .tech-card {
     opacity: 0;
@@ -1635,8 +1648,8 @@ main {
 }
 
 
+/* Animaciones */
 
-/* ===== 13 · ANIMACIONES ===== */
 
 @keyframes ambient-drift {
     to {
@@ -1722,7 +1735,9 @@ main {
             0 20px 60px rgba(0, 0, 0, .50);
     }
 
-}@keyframes reflejoDorado {
+}
+
+@keyframes reflejoDorado {
     0%, 55% {
         left: -80%;
     }
@@ -1731,7 +1746,9 @@ main {
         left: 150%;
     }
 
-}@keyframes contactPulse {
+}
+
+@keyframes contactPulse {
     0%, 100% {
         opacity: 0.6;
         box-shadow: 0 0 7px rgba(215, 183, 123, 0.3);
@@ -1744,13 +1761,14 @@ main {
 
 }
 
-/* Evita duplicar el reflejo anterior */
+
 .art-shine {
     display: none;
 }
 
 
-/* ===== 14 · RESPONSIVE Y ACCESIBILIDAD ===== */
+/* Diseño responsivo */
+
 
 @media (pointer:fine) {
 
@@ -1864,7 +1882,6 @@ main {
 }
 
 
-
 @media (max-width:575px) {
 
     .navbar {
@@ -1945,7 +1962,7 @@ main {
 
     .hero-bottom {
         margin-top: 10px;
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
         font-size: 9px;
         line-height: 1.5;
@@ -2179,7 +2196,7 @@ main {
     }
 }
 
-/* Accesibilidad adicional para efectos luminosos. */
+
 @media (prefers-reduced-motion: reduce) {
     .art-frame,
     .art-orbit,
@@ -2190,10 +2207,8 @@ main {
 }
 
 
-/* ============================================================
-   15 · MÁS ALLÁ DEL CÓDIGO — HABILIDADES BLANDAS
-   Sección #sobre-mi · tarjetas .soft-card
-   ============================================================ */
+/* Habilidades blandas */
+
 
 .softskills-section {
     position: relative;
@@ -2206,7 +2221,7 @@ main {
         #080d14;
 }
 
-/* Reemplaza el fondo antiguo de #sobre-mi sin afectar otras secciones. */
+
 #sobre-mi.softskills-section {
     padding-top: 45px;
     padding-bottom: 80px;
@@ -2370,7 +2385,7 @@ main {
     }
 }
 
-/* La clase softskills-ready se agrega con JS, evitando tarjetas ocultas si JS no carga. */
+
 .softskills-ready .soft-card {
     opacity: 0;
     transform: translateY(45px);
@@ -2462,14 +2477,10 @@ main {
     }
 }
 
-/* ============================================================
-   18 · AJUSTES FINALES DE COMPOSICIÓN Y LEGIBILIDAD
-   Mismos tamaños para Hablemos y Descargar CV.
-   Párrafos justificados; controles y títulos centrados o alineados
-   naturalmente para no afectar su legibilidad.
-   ============================================================ */
 
-/* Mantener columnas equilibradas sin desbordar el contenido */
+/* Ajustes de composición */
+
+
 .hero-grid {
     grid-template-columns: minmax(0, 1.22fr) minmax(0, .78fr);
     gap: clamp(26px, 4vw, 65px);
@@ -2478,7 +2489,7 @@ main {
 .hero-copy { min-width: 0; }
 .hero-art { max-width: 390px; }
 
-/* Botones a la misma altura y con espaciado uniforme */
+
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
@@ -2499,7 +2510,7 @@ main {
     margin: 0;
 }
 
-/* Dos botones secundarios de igual ancho y alto */
+
 .hero-actions > .btn-outline-custom,
 .hero-actions > .btn-cv {
     flex: 0 0 150px;
@@ -2519,7 +2530,7 @@ main {
     flex-shrink: 0;
 }
 
-/* Justificación para texto descriptivo (no para títulos ni botones) */
+
 .lead-text,
 .project-content p,
 .softskills-intro,
@@ -2534,14 +2545,14 @@ main {
     overflow-wrap: break-word;
 }
 
-/* Espaciado y ritmo de lectura */
+
 .lead-text {
     width: 100%;
     max-width: 590px;
     line-height: 1.75;
 }
 
-/* No justificar las etiquetas, títulos ni los botones */
+
 .hero-actions, .hero-actions a,
 .tags, .tags span,
 .tech-item, .tech-item span,
@@ -2552,7 +2563,7 @@ main {
     text-align: center;
 }
 
-/* Mantener a la izquierda los metadatos y enlaces de las tarjetas */
+
 .project-content a, .soft-origin,
 .contact-detail, .contact-item-info {
     text-align: left;
@@ -2579,7 +2590,7 @@ main {
         padding: 10px 9px;
     }
     .lead-text { max-width: 100%; }
-    
+
 }
 .contact-panel {
     text-align: left;
@@ -2618,23 +2629,25 @@ main {
     flex-shrink: 0;
 }
 
-/* ============================================
-   TEXTOS JUSTIFICADOS SIN CORTAR PALABRAS
-============================================ */
 
-/* Descripciones de proyectos */
+/* Proyectos */
+
 .project-content p,
 
+
 /* Habilidades blandas */
+
 .soft-card p,
 
-/* Presentación principal */
+
 .lead-text,
 
-/* Descripción de contacto */
+
+/* Contacto */
+
 .contact-copy p,
 
-/* Textos generales */
+
 .muted-text {
     text-align: justify;
     hyphens: none;
@@ -2646,18 +2659,13 @@ main {
     white-space: normal;
 }
 
-/* Evitar justificación en títulos */
+
 .project-content h3,
 .soft-card h3,
 .contact-copy h2 {
     text-align: left;
 }
 
-
-/* =====================================
-   BOTONES HABLEMOS Y DESCARGAR CV
-   MISMO ESTILO DORADO
-===================================== */
 
 .hero-actions .btn-outline-custom,
 .hero-actions .btn-cv {
@@ -2690,7 +2698,7 @@ main {
         transform 0.3s ease;
 }
 
-/* Mismo efecto al pasar el cursor */
+
 .hero-actions .btn-outline-custom:hover,
 .hero-actions .btn-cv:hover {
     background: rgba(215, 183, 123, 0.17);
@@ -2703,7 +2711,7 @@ main {
         0 0 25px rgba(215, 183, 123, 0.20);
 }
 
-/* Ícono de descarga */
+
 .hero-actions .btn-cv i {
     font-size: 15px;
     line-height: 1;
@@ -2734,6 +2742,154 @@ main {
 
 @media (prefers-reduced-motion: reduce) {
     .scroll-arrow {
+        animation: none;
+    }
+}
+
+
+/* Ajustes finales */
+
+/* Descripciones justificadas sin dividir palabras */
+.lead-text,
+.project-content p,
+.softskills-intro,
+.soft-card p,
+.contact-copy p,
+.contact-section p,
+.section-heading p,
+.muted-text,
+.about-text {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: none;
+    -webkit-hyphens: none;
+    word-break: normal;
+    overflow-wrap: normal;
+    white-space: normal;
+}
+
+/* Títulos y etiquetas con alineación natural */
+.hero h1, .hero h2,
+.section-heading h2,
+.project-content h3,
+.soft-card h3,
+.tech-card h3,
+.contact-copy h2,
+.tech-item,
+.tech-number,
+.tags,
+.hero-actions,
+.hero-actions a {
+    text-align: left;
+    hyphens: none;
+}
+
+/* Botones secundarios uniformes */
+.hero-actions .btn-outline-custom,
+.hero-actions .btn-cv {
+    flex: 0 0 150px;
+    width: 150px;
+    min-width: 150px;
+    min-height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 10px;
+    border: 1px solid var(--gold);
+    border-radius: 30px;
+    background: rgba(215, 183, 123, .06);
+    color: var(--gold-light);
+    font: 700 12px/1.3 "DM Sans", sans-serif;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Tarjeta de contacto alineada a la izquierda */
+.contact-panel,
+.contact-panel-heading,
+.contact-item,
+.contact-item-info,
+.contact-item-info strong,
+.contact-item-info small,
+.contact-item-info .email-text {
+    text-align: left;
+    text-align-last: left;
+}
+.contact-item-info {
+    align-items: flex-start;
+    justify-content: center;
+}
+.contact-arrow {
+    margin-left: auto;
+}
+
+/* Desliza para explorar debajo de la fotografía */
+.hero > .hero-bottom.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1320px;
+    margin: 20px auto 0;
+    padding: 0 12px 18px;
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    z-index: 3;
+    text-align: right;
+}
+.hero > .hero-bottom.container a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-left: auto;
+    color: var(--ivory);
+    font: 500 13px/1.4 "DM Sans", sans-serif;
+    letter-spacing: .3px;
+    text-transform: none;
+    white-space: nowrap;
+}
+.hero > .hero-bottom.container .scroll-arrow {
+    display: inline-block;
+    color: var(--gold-light);
+    font-size: 17px;
+    animation: scrollArrow 2s ease-in-out infinite;
+}
+
+@media (max-width: 991px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero > .hero-bottom.container {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 14px;
+    }
+    .hero > .hero-bottom.container a {
+        font-size: 11px;
+    }
+    .hero-actions .btn-outline-custom,
+    .hero-actions .btn-cv {
+        flex-basis: 143px;
+        width: 143px;
+        min-width: 143px;
+        min-height: 46px;
+        font-size: 11.5px;
+    }
+}
+
+@keyframes scrollArrow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero > .hero-bottom.container .scroll-arrow {
         animation: none;
     }
 }
